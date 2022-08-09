@@ -1,4 +1,4 @@
-# Aula 01 - Parte 2
+# Capítulo 1 - Introdução
 
 ## Tradutores
 - Compiladores
