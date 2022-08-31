@@ -21,6 +21,8 @@ if x:
 else:
     print("Padrão não encontrado")
 
+x.span()
+
 # group e span
 txt2 = "o rato roeu a roupa do rei de roma. Que rato malvado!"
 
