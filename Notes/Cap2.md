@@ -138,3 +138,32 @@ Obs.: As classes podem variar
 
     d) Sequencia de numeros que contêm pelo menos três 1's em QUALQUER posição
     [01]*1[01]*1[01]*1
+
+## Autômatos Finitos
+- Definição
+    - Representa um fluxo possível de símbolos 
+    - Possui estados iniciais e finais(aceitação)
+- Elementos
+    - Fita de Entrada: "vetor" da entrada
+    - Unidade de Controle: Estado atual da máquina
+    - Função de Transição: Determina o novo estado
+- Tipos Finitos:
+    - Deterministas(DFA): Apenas um caminho possível a cada iteração(POR LETRA!)
+    - Não Deterministas(NFA): Vários caminhos possíveis
+    - com Movimentos Vazios(NFA-ε): Pode ter transições com ε(vazio)
+- Quíntupla/5-tuple de um DFA
+
+        A = (Q, Σ, δ, q0, F)
+
+    - A: Nome do DFA
+    - Q: Conjunto de estados
+    - Σ: Conjunto de símbolos de entrada
+    - δ: Função de transição
+    - q0: Seu estado inicial
+    - F: Estados de aceitação ou o estado q pode finalizar
+
+- Tabela de Transição
+    - Colunas: Entradas
+    - Linhas: Estados
+    - (->) para indicar estado inicial
+    - (*) para indicar estado final
