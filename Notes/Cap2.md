@@ -167,3 +167,10 @@ Obs.: As classes podem variar
     - Linhas: Estados
     - (->) para indicar estado inicial
     - (*) para indicar estado final
+
+- Construção de Thompson
+    1. Construir um NFA para cada subexpressão(Cada caractere necessita de dois estados)
+    2. Utilizamos ε-transições para juntar cada pedaço de uma RegEx
+    3. União de dois caracteres deve criar mais dois estados comuns aos dois caracteres(4 estados), um de início e outro de aceitação, ligados por ε.
+    4. Repetição(\*) de um caractere (2 estados) utiliza-se mais dois estados, como em *3* , porém interligados com ε e interliga os outros dois estados com ε também.
+    5. Repetição(+) interliga dois estado(1 caractere) e mais outra ligação ε entre eles 
