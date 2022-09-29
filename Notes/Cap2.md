@@ -174,3 +174,17 @@ Obs.: As classes podem variar
     3. União de dois caracteres deve criar mais dois estados comuns aos dois caracteres(4 estados), um de início e outro de aceitação, ligados por ε.
     4. Repetição(\*) de um caractere (2 estados) utiliza-se mais dois estados, como em *3* , porém interligados com ε e interliga os outros dois estados com ε também.
     5. Repetição(+) interliga dois estado(1 caractere) e mais outra ligação ε entre eles 
+
+- NFA para DFA
+    - 
+
+- NFA-ε para DFA
+    - Identificar ε-fechos(Todos estados que conseguimos chegar andando em ε, inclusive o próprio estado)
+    - Exemplo: 1' = {1, 2, 4}; 2' = {2}; 3' = {2, 3, 4}; 4' = {4}
+    - Passos:
+        1. Criar o ε-fecho do estado inicial.
+        2. Criar uma tabela com: Estados do NFA, Estados do DFA.
+        3. Criar os fechos das letras dos estados DFA da tabela anterior e inserir na próxima linha da tabela e inserir(Fazer este processo até preencher a tabela toda).
+        4. Repetir o processo até preencher a tabela toda.
+        5. Marcar como aceitáveis os estados constituídos do estado de aceitação do autômato.
+        6. Desenhar o DFA.
