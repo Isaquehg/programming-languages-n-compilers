@@ -1,6 +1,6 @@
 # Capítulo 2 - Análise Léxica
 
-## Introdução
+## Características
 - Varrer o código e encontrar Tokens (Scanning)
 - Remove comentários e espaços desnecessários
 
@@ -11,7 +11,7 @@
 ## Termos
 - Lexema: Palavras já conhecidas pelo compilador
 - Token: Lexema após processado e classificado < classe_do_Token, lexema >
-Obs.: Palavras reservadas, normalmente, são o próprio Token, exemplo: < while >
+Obs.: Palavras reservadas, normalmente, são o próprio Token, exemplo: < ; >
 - Padrões: RegEX
 
 ## Ex1:
@@ -176,7 +176,13 @@ Obs.: As classes podem variar
     5. Repetição(+) interliga dois estado(1 caractere) e mais outra ligação ε entre eles 
 
 - NFA para DFA
-    - 
+    1. Construir tabela de transições
+    2. Construir tabela através do produto cartesiano dos estados, incluindo último conjunto como vazio
+    3. Indicar todos estados de aceitação
+    4. Verificar a ocorrência de cada símbolo no conjunto
+    5. Eliminar transições em que nada chega até elas
+    6. Eliminar estados que não tem saídas e não são de aceitação
+    7. Montar DFA
 
 - NFA-ε para DFA
     - Identificar ε-fechos(Todos estados que conseguimos chegar andando em ε, inclusive o próprio estado)
