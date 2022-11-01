@@ -21,31 +21,31 @@ Resultado: Árvores de Derivação
 ## Árvores de Derivação
 - Derivação
 
-Ex3.:
+        Ex3.:
 
-        Expresssão: (num - num) * num
-        exp -> exp op exp | (exp) | num
-        op -> + | - | *
+                Expresssão: (num - num) * num
+                exp -> exp op exp | (exp) | num
+                op -> + | - | *
 
-        exp -> exp op exp
-        exp -> (exp) op exp
-        exp -> (exp op exp) op exp
-        exp -> (num op exp) op exp
-        exp -> (num - exp) op exp
-        exp -> (num - num) op exp
-        exp -> (num - num) * exp
-        exp -> (num - num) * num
-        ** (OBS.: FAZER UMA MUDANÇA POR VEZ) **
+                exp -> exp op exp
+                exp -> (exp) op exp
+                exp -> (exp op exp) op exp
+                exp -> (num op exp) op exp
+                exp -> (num - exp) op exp
+                exp -> (num - num) op exp
+                exp -> (num - num) * exp
+                exp -> (num - num) * num
+                ** (OBS.: FAZER UMA MUDANÇA POR VEZ) **
 
-Ex4.:
+        Ex4.:
 
-        Expressão: -(id + id)
-        E -> E O E | -E | (E) | id
-        O -> + | - | *
+                Expressão: -(id + id)
+                E -> E O E | -E | (E) | id
+                O -> + | - | *
 
-        E -> -E
-        E -> -(E)
-        E -> -(E O E)
-        E -> -(id O E)
-        E -> -(id + E)
-        E -> -(id + id)
+                E -> -E
+                E -> -(E)
+                E -> -(E O E)
+                E -> -(id O E)
+                E -> -(id + E)
+                E -> -(id + id)
