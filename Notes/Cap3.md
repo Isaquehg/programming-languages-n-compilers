@@ -36,3 +36,16 @@ Ex3.:
         exp -> (num - num) * exp
         exp -> (num - num) * num
         ** (OBS.: FAZER UMA MUDANÇA POR VEZ) **
+
+Ex4.:
+
+        Expressão: -(id + id)
+        E -> E O E | -E | (E) | id
+        O -> + | - | *
+
+        E -> -E
+        E -> -(E)
+        E -> -(E O E)
+        E -> -(id O E)
+        E -> -(id + E)
+        E -> -(id + id)
